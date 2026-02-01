@@ -1,0 +1,67 @@
+@use "./base/variables" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 260px;
+  padding-bottom: 32px;
+  background-image: url("/image/hero/heroMobile.jpg");
+
+  background-image: image-set(
+    url("/image/hero/heroMobile.jpg") 1x,
+    url("/image/hero/heroMobile@2x.jpg") 2x
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 812px;
+}
+.title-hero {
+  font-size: 24px;
+  text-align: center;
+  width: 234px;
+}
+.subTitle {
+  position: relative;
+  text-align: center;
+  font-size: 64px;
+}
+.subTitle::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 70%;
+
+  transform: scaleY(-1);
+  background: linear-gradient(
+    5deg,
+    rgba(255, 255, 255, 1) -54.667%,
+    rgba(255, 255, 255, 0) 63.375%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-hero {
+  margin-top: 54px;
+  width: 174px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: $main-color-but;
+  color: $main-color-white;
+}
+.list__icon-social {
+  display: flex;
+  gap: 15px;
+  margin-top: auto;
+}
+.item__icon-social {
+  width: 24px;
+  height: 24px;
+}
+.icon-social {
+  width: 100%;
+  height: 100%;
+}

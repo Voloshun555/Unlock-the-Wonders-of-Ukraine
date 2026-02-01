@@ -1,0 +1,21 @@
+@use "./base/variables" as *;
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 375px;
+  width: 100%;
+  transform: translate(-50%);
+}
+.logo {
+  width: 64px;
+  height: 46px;
+}
+.btn__burger-menu {
+  display: flex;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  color: $main-color-white;
+}
