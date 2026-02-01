@@ -1,0 +1,28 @@
+@use "./base/variables" as *;
+
+.about {
+  padding-top: 80px;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.about__content {
+  position: relative;
+}
+
+.about__content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateY(-18%);
+  background-color: rgba(255, 255, 255, 0.05);
+  mask-image: url("../assets/svg/map.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 746px 420px;
+  z-index: -1;
+}
