@@ -1,5 +1,79 @@
-.our-tours{
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
+@use "./base/variables" as *;
+
+
+.our-tours {
+  padding: 80px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.list-our-tours {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 375px;
+  width: 100%;
+}
+.img-tours {
+  height: 409px;
+}
+.wrapper-yours {
+  padding: 16px;
+}
+.title-tours {
+  font-size: 24px;
+}
+
+.characteristic-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.characteristic-item {
+  font-family: Lato;
+  font-size: 16px;
+  position: relative;
+  margin-left: 22px;
+}
+.characteristic-item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -14px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.included-section {
+  margin-top: 16px;
+}
+
+.text-include {
+  font-size: 18px;
+}
+.included-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.included-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.included-icon {
+  width: 24px;
+  height: 24px;
+}
+.btn-tours-book{
+    margin-top: 32px;
+    width: 343px;
+    height: 54px;
+    background-color: $main-color-but;
+    color: $main-color-white;
+    border-radius: 4px;
+    font-size: 16px;
 }
