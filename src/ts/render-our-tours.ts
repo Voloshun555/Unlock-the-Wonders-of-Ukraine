@@ -6,14 +6,12 @@ function renderOurTours() {
   return dataOurTours
     .map((item) => {
       const { image, image2, title, info } = item;
-
-      // Створюємо список характеристик
       const characteristic = info
         .map((el) => `<li class="characteristic-item"> ${el} </li>`)
         .join("");
 
       return `
-        <li class="our-tours-item">
+        <li class="our-tours-item swiper-slide">
           <picture>
             <source 
               media="(max-width: 767px)" 
@@ -60,19 +58,13 @@ function renderOurTours() {
                  <p>Travel insurance</p>
               </li>
             </ul>
-          </div>
-          <button class="btn-tours-book">Book<button/>
-</div>
-          
+            </div>
+            <button class="btn-tours-book">Book</button></div>
         </li>
       `;
     })
     .join("");
 }
-
-// Виклик рендеру з перевіркою
 if (listOurTours) {
   listOurTours.insertAdjacentHTML("beforeend", renderOurTours());
-} else {
-  console.warn("Елемент .list-our-tours не знайдено на сторінці.");
 }

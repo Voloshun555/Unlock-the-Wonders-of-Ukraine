@@ -1,19 +1,21 @@
 @use "./base/variables" as *;
 
-
 .our-tours {
   padding: 80px 0 0 0;
   display: flex;
   flex-direction: column;
 }
+
 .list-our-tours {
   margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   max-width: 375px;
   width: 100%;
 }
+
+.our-tours-item {
+  max-width: 375px;
+}
+
 .img-tours {
   height: 409px;
   object-fit: cover;
@@ -21,6 +23,10 @@
 }
 .wrapper-yours {
   padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .title-tours {
   font-size: 24px;
@@ -50,6 +56,7 @@
 }
 .included-section {
   margin-top: 16px;
+  flex-grow: 1;
 }
 
 .text-include {
@@ -70,12 +77,15 @@
   width: 24px;
   height: 24px;
 }
-.btn-tours-book{
-    margin-top: 32px;
-    width: 343px;
-    height: 54px;
-    background-color: $main-color-but;
-    color: $main-color-white;
-    border-radius: 4px;
-    font-size: 16px;
+.btn-tours-book {
+  margin-top: 32px;
+  max-width: 343px;
+  width: 100%;
+  height: 54px;
+  background-color: $main-color-but;
+  color: $main-color-white;
+  border-radius: 4px;
+  font-size: 16px;
+
+  
 }

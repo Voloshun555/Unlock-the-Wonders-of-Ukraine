@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 .container {
   display: flex;
   margin: auto;
@@ -7,4 +8,27 @@
 .title-sections {
   font-size: 40px;
   text-align: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.prev-btn,
+.next-btn {
+  color: $main-color-grey;
+}
+
+.icon-prev,
+.icon-next {
+  height: 23px;
+  width: 114px;
+   color: $main-color-white;
+}
+
+.isActive {
+  color: $main-color-white;
+}
+.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none; 
 }
