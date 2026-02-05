@@ -7,7 +7,7 @@ function renderGallery() {
       return `<li class="swiper-slide item-gallery">
         <picture>
           <source srcset="${img} 1x, ${img2x} 2x" />
-          <img src="${img}" alt="${alt}" />
+          <img src="${img}" alt="${alt}" class="img-gallery"/>
         </picture>
       </li>`;
     })

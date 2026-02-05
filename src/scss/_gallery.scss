@@ -1,11 +1,15 @@
 @use "./base/variables" as *;
 
-
 .gallery {
   padding-top: 80px;
   flex-direction: column;
 }
 .container-swiper {
   margin: 32px 0 32px 0;
- 
+}
+.img-gallery {
+  width: 344px;
+  height: 614px;
+  object-fit: cover;
+  border-radius: 4px;
 }

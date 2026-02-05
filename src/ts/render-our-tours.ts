@@ -24,7 +24,7 @@ function renderOurTours() {
               class="img-tours"
             />
           </picture>
-<div class="wrapper-yours">
+<div class="wrapper-tours">
 <h3 class="title-tours">${title}</h3>
           <ul class="characteristic-list">
             ${characteristic}
