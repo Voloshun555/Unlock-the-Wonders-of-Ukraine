@@ -1,4 +1,5 @@
 import { dataOurTours } from "./data-our-tours";
+import sprite from "../assets/svg/symbol-defs.svg";
 
 const listOurTours = document.querySelector(".list-our-tours");
 
@@ -35,25 +36,25 @@ function renderOurTours() {
             <ul class="included-list">
               <li class="included-item"> 
                 <svg class="included-icon">
-                  <use href="./src/assets/svg/symbol-defs.svg#icon-bus"></use>
+                  <use href="${sprite}#icon-bus"></use>
                 </svg>
                 <p>Transfer</p>
               </li>
               <li class="included-item"> 
                 <svg class="included-icon">
-                  <use href="./src/assets/svg/symbol-defs.svg#icon-id-card"></use>
+                  <use href="${sprite}#icon-id-card"></use>
                 </svg>
                  <p>Travel insurance</p>
               </li>
               <li class="included-item"> 
                 <svg class="included-icon">
-                  <use href="./src/assets/svg/symbol-defs.svg#icon-face"></use>
+                  <use href="${sprite}#icon-face"></use>
                 </svg>
                  <p>Professional guide</p>
               </li>
               <li class="included-item"> 
                 <svg class="included-icon">
-                  <use href="./src/assets/svg/symbol-defs.svg#icon-ticket"></use>
+                  <use href="${sprite}#icon-ticket"></use>
                 </svg>
                  <p>Travel insurance</p>
               </li>
