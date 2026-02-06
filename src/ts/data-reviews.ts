@@ -15,7 +15,7 @@ import imgValeriyX from "/image/reviews/Valeriy@2x.png";
 import imgIlona from "/image/reviews/Ilona.png";
 import imgIlonaX from "/image/reviews/Ilona@2x.png";
 
-export const data = [
+export const dataReviews = [
   {
     id: 1,
     name: "Dmitro",
@@ -38,7 +38,7 @@ export const data = [
     text: "Great tour. I really liked the atmosphere, professional approach and very interesting information",
     img: imgMarry,
     imgX2: imgMarryX,
-    star: 5,
+    star: 4,
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const data = [
     text: "We traveled with a company and it was incredible, everyone without exception was satisfied and we will definitely go somewhere else with you and will recommend it to everyone",
     img: imgFedir,
     imgX2: imgFedirX,
-    star: 5,
+    star: 4,
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const data = [
     text: "I felt cozy and comfortable throughout the tour. Would have liked a little more free time to explore on my own, but overall was happy with the tour.",
     img: imgVictoria,
     imgX2: imgVictoriaX,
-    star: 5,
+    star: 3,
   },
   {
     id: 7,
@@ -78,6 +78,6 @@ export const data = [
     text: "My tour with this agency was incredible! Everything was organized to a high standard, including transport, accommodation and excursions. The guides were very professional and knew every corner of the place where we were going.",
     img: imgIlona,
     imgX2: imgIlonaX,
-    star: 5,
+    star: 4,
   },
 ];

@@ -1,3 +1,4 @@
 import "./ts/render-our-tours.ts";
-import "./ts/renderGallery.ts";
+import "./ts/render-gallery.ts";
+import "./ts/render-reviews.ts";
 import "./ts/slider.ts";

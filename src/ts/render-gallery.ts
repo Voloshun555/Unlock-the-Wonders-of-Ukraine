@@ -16,6 +16,4 @@ function renderGallery() {
 
 if (listGallery) {
   listGallery.insertAdjacentHTML("beforeend", renderGallery());
-} else {
-  console.log("lkfjb hnsl");
 }
