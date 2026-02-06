@@ -1,0 +1,54 @@
+.reviews {
+  padding-top: 32px;
+  background-image: url("../../public/image/reviews/bgReviewsMobile.jpg");
+  background-image: image-set(
+    url("../../public/image/reviews/bgReviewsMobile.jpg") 1x,
+    url("../../public/image/reviews/bgReviewsMobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-reviews {
+  border: 1px solid #fff;
+  max-width: 343px;
+  width: 100%;
+  height: 343px;
+  padding: 32px;
+  margin: 32px 0;
+}
+
+.list-icon-stars {
+  display: flex;
+  gap: 4px;
+}
+.item-icon-star {
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.wrapper-info-person {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.name-person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title-name-person {
+  font-size: 18px;
+}
+
+.text-reviews {
+  margin-top: 32px;
+  font-family: Lato;
+  font-size: 16px;
+}
