@@ -66,5 +66,8 @@
 <symbol id="icon-Star" viewBox="0 0 32 32">
 <path fill="currentColor" style="fill: var(--color1, currentColor)" d="M16 0l4.227 10.173 10.987 0.88-8.36 7.173 2.547 10.72-9.4-5.747-9.4 5.733 2.547-10.707-8.347-7.173 10.987-0.88z"></path>
 </symbol>
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<path fill="currentColor" stroke="currentColor" style="stroke: var(--color1, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M24 8l-16 16M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>
