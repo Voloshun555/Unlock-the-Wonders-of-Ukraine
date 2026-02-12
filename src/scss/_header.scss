@@ -16,18 +16,23 @@
   margin-left: auto;
   color: $main-color-white;
 
+  width: 40px;
+height: 40px;
+
   position: relative;
 
   justify-content: center;
   align-items: center;
 }
-
+.logo{
+width: 64px;
+  height: 46px;
+}
 .logo,
 .btn__burger-menu {
   position: relative;
   z-index: 300;
-  width: 64px;
-  height: 46px;
+  
 }
 .burger-menu {
   position: absolute;
