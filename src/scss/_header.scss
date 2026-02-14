@@ -1,4 +1,5 @@
 @use "./base/variables" as *;
+@use "./base/mixins" as *;
 
 .header-container {
   position: absolute;
@@ -17,22 +18,21 @@
   color: $main-color-white;
 
   width: 40px;
-height: 40px;
+  height: 40px;
 
   position: relative;
 
   justify-content: center;
   align-items: center;
 }
-.logo{
-width: 64px;
+.logo {
+  width: 64px;
   height: 46px;
 }
 .logo,
 .btn__burger-menu {
   position: relative;
   z-index: 300;
-  
 }
 .burger-menu {
   position: absolute;
@@ -98,4 +98,32 @@ width: 64px;
 .icon-burger-menu:not(.is-hidden) {
   opacity: 1;
   transform: rotate(0) scale(1);
+}
+.list-nav-header {
+  display: none;
+}
+@include tablet-only {
+  .btn__burger-menu {
+    display: none;
+  }
+  .list-nav-header {
+    display: flex;
+    gap: 32px;
+  }
+  .item-nav-header {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18px;
+  }
+  .header-container {
+    max-width: 1439px;
+    display: flex;
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

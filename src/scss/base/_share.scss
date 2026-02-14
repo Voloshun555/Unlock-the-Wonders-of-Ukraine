@@ -1,4 +1,6 @@
-@use "../base/variables" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
+
 .container {
   display: flex;
   margin: auto;
@@ -22,7 +24,7 @@
 .icon-next {
   height: 23px;
   width: 114px;
-   color: $main-color-white;
+  color: $main-color-white;
 }
 
 .isActive {
@@ -30,5 +32,12 @@
 }
 .swiper-button-disabled {
   opacity: 0.3;
-  pointer-events: none; 
+  pointer-events: none;
+}
+@include tablet-only {
+  .container {
+    max-width: 1439px;
+    width: 100%;
+     padding: 16px 32px 0;
+  }
 }

@@ -1,4 +1,5 @@
 @use "./base/variables" as *;
+@use "./base/mixins" as *;
 
 .hero {
   display: flex;
@@ -27,11 +28,11 @@
   position: relative;
   text-align: center;
   font-size: 64px;
-  z-index: 1;
 }
 .subTitle::after {
   content: attr(data-text);
   position: absolute;
+  display: inline-block;
   left: 0;
   top: 70%;
 
@@ -47,12 +48,18 @@
   -webkit-text-fill-color: transparent;
 }
 .btn-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 54px;
   width: 174px;
   height: 48px;
   border-radius: 4px;
   background-color: $main-color-but;
   color: $main-color-white;
+  font-size: 16px;
 }
 .list__icon-social {
   display: flex;
@@ -66,4 +73,40 @@
 .icon-social {
   width: 100%;
   height: 100%;
+}
+@include tablet-only {
+  .hero {
+    padding-top: 260px;
+    padding-bottom: 32px;
+
+    background-image: image-set(
+      url("/image/hero/heroTablet.jpg") 1x,
+      url("/image/hero/heroTablet@2x.jpg") 2x
+    );
+    background-size: cover;
+    height: 1008px;
+  }
+
+  .title-hero {
+    font-size: 48px;
+    width: 468px;
+  }
+  .subTitle {
+    font-size: 128px;
+  }
+  .btn-hero {
+    margin-top: 60px;
+    width: 174px;
+    height: 54px;
+    border-radius: 4px;
+    background-color: $main-color-but;
+    color: $main-color-white;
+  }
+  .list__icon-social {
+    flex-direction: column;
+    position: absolute;
+    bottom: -132px;
+    right: 32px;
+    margin-top: 0;
+  }
 }

@@ -1,4 +1,6 @@
 @use "./base/variables" as *;
+@use "./base/mixins" as *;
+
 
 .about {
   padding-top: 80px;
@@ -25,4 +27,15 @@
   mask-position: center;
   mask-size: 746px 420px;
   z-index: -1;
+}
+
+@include tablet-only {
+ .about__content {
+  display: flex;          
+  flex-direction: row;    
+  gap: 32px;             
+}
+
+
+
 }
