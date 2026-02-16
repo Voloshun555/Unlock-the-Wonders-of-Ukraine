@@ -1,10 +1,6 @@
 @use "./base/variables" as *;
 @use "./base/mixins" as *;
 
-
-.about {
-  padding-top: 80px;
-}
 .about__content {
   display: flex;
   flex-direction: column;
@@ -12,15 +8,15 @@
   margin-top: 30px;
 }
 
-.about__content {
+.about-wrapper {
   position: relative;
 }
 
-.about__content::before {
+.about-wrapper::before {
   content: "";
   position: absolute;
   inset: 0;
-  transform: translateY(-18%);
+  transform: translateY(-5%);
   background-color: rgba(255, 255, 255, 0.05);
   mask-image: url("../assets/svg/map.svg");
   mask-repeat: no-repeat;
@@ -30,12 +26,22 @@
 }
 
 @include tablet-only {
- .about__content {
-  display: flex;          
-  flex-direction: row;    
-  gap: 32px;             
-}
-
-
-
+  .about {
+    width: 835px;
+    height: 573px;
+  }
+  .about__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .about__text:first-child {
+    width: 369px;
+    grid-row: span 2;
+  }
+  .about-wrapper::before {
+    transform: translateY(-10%);
+    // mask-size: 835px 614px;
+  }
 }

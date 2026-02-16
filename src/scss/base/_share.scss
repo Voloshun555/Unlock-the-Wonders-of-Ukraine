@@ -5,7 +5,7 @@
   display: flex;
   margin: auto;
   max-width: 375px;
-  padding: 16px 16px 0;
+  padding: 80px 0 0 0;
 }
 .title-sections {
   font-size: 40px;
@@ -38,6 +38,17 @@
   .container {
     max-width: 1439px;
     width: 100%;
-     padding: 16px 32px 0;
+    padding: 100px 32px 0;
+  }
+  .our-tours {
+    align-items: center;
+  }
+  .btn-container {
+    display: flex;
+    margin-top: 60px;
+    gap: 208px;
+  }
+  .swiper-container-tours{
+    margin-top: 40px;
   }
 }

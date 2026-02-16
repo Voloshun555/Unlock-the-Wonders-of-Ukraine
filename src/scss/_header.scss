@@ -2,14 +2,21 @@
 @use "./base/mixins" as *;
 
 .header-container {
+  display: flex;
+  margin: auto;
+
   position: absolute;
   top: 0;
   left: 50%;
+
   max-width: 375px;
   width: 100%;
+
   transform: translateX(-50%);
   align-items: center;
   z-index: 100;
+  
+  padding: 16px 16px 0;
 }
 
 .btn__burger-menu {

@@ -27,7 +27,8 @@ function renderOurTours() {
           </picture>
 <div class="wrapper-tours">
 <h3 class="title-tours">${title}</h3>
-          <ul class="characteristic-list">
+<div class="wrapper-list-characteristic-included">
+  <ul class="characteristic-list">
             ${characteristic}
           </ul>
 
@@ -60,6 +61,8 @@ function renderOurTours() {
               </li>
             </ul>
             </div>
+</div>
+        
             <button class="btn-tours-book">Book</button></div>
         </li>
       `;
