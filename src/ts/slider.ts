@@ -5,9 +5,6 @@ import "swiper/css";
 function initSliders() {
   const sliderContainers = document.querySelectorAll(".js-slider-container");
 
-  let slidesCount = 1;
-  let slidesOnTablet = 1;
-
   sliderContainers.forEach((container) => {
     const swiperEl = container.querySelector(".swiper") as HTMLElement;
     if (!swiperEl) return;
@@ -15,8 +12,14 @@ function initSliders() {
     const reviews = swiperEl.classList.contains("swiper-container-reviews");
     const ourTours = swiperEl.classList.contains("swiper-container-tours");
 
+    let slidesCount = 1;
+    let slidesOnTablet = 1;
+
     if (gallery) {
       slidesOnTablet = 2;
+    }
+    if (reviews) {
+      slidesOnTablet = 2.4
     }
 
     const nextBtn = container.querySelector(
@@ -35,7 +38,7 @@ function initSliders() {
         breakpoints: {
           835: {
             slidesPerView: slidesOnTablet,
-            spaceBetween: 16
+            spaceBetween: 16,
           },
         },
         navigation: {
