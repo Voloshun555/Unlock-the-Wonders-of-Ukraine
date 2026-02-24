@@ -8,9 +8,9 @@
 .swiper-container-tours {
   max-width: 375px;
   width: 100%;
+  margin-top: 32px;
 }
 .list-our-tours {
-  margin-top: 32px;
   width: 100%;
 }
 
@@ -86,17 +86,20 @@
 @include tablet-only {
   .swiper-container-tours {
     max-width: 835px;
+    margin-top: 40px;
   }
   .img-tours {
     height: 642px;
   }
   .wrapper-list-characteristic-included {
     display: flex;
-    // gap: 32px;
   }
-  .included-section{
+  .included-section {
     margin-left: auto;
   }
- 
-
+  .our-tours > .btn-container {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 60px;
+  }
 }
