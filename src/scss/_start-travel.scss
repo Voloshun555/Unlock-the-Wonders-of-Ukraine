@@ -1,4 +1,5 @@
 @use "./base/variables" as *;
+@use "./base/mixins" as *;
 .start-travel {
   background-image: url("/image/start-trevel/bgStartTravelMobile.jpg");
   background-image: image-set(
@@ -61,7 +62,6 @@ textarea {
   color: $main-color-white;
 }
 
-
 .input-start-travel {
   padding: 14px 12px;
   background-color: transparent;
@@ -86,4 +86,37 @@ textarea {
 
   font-family: Jomolhari;
   font-size: 16px;
+}
+@include tablet-only {
+  .start-travel {
+    background-image: image-set(
+      url("/image/start-trevel/bgStartTravelTablet.jpg") 1x,
+      url("/image/start-trevel/bgStartTravelTablet@2x.jpg") 2x
+    );
+    background-position: left;
+    background-size: 602px 786px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper-start-travel {
+    width: 770px;
+    border: 1px solid $main-color-white;
+    display: flex;
+    gap: 32px;
+    padding: 70px 50px;
+  }
+  .wripper-info-start-trevel,
+  .forma-start-travel {
+    width: 50%;
+    margin: 0;
+  }
+  .wripper-info-start-trevel{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .text-start-travel, .text__start-travel--secondary{
+    margin: 0;
+  }
 }

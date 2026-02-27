@@ -1,8 +1,12 @@
+// @use "./base/variables" as *;
+@use "./base/mixins" as *;
+
 .footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 16px;
   padding-top: 80px;
+  padding: 80px 16px 16px;
 }
 
 .logo-footer {
@@ -44,4 +48,35 @@
 }
 a {
   font-style: normal;
+}
+
+@include tablet-only {
+  .footer {
+    padding: 100px 32px 16px;
+  }
+  .nav-footer {
+    display: flex;
+  }
+  .list-nav-footer{
+    gap: 16px;
+  }
+  .wrapper-contacts-social-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wrapper-list-footer {
+    margin-top: 0;
+  }
+  .list-contacts-footer{
+     align-items: flex-end;
+     gap: 16px;
+  }
+.list__icon-social-footer{
+  margin-top: 40px;
+}
 }
