@@ -44,3 +44,9 @@
     align-items: center;
   }
 }
+@include desktop-only {
+  .container {
+    max-width: 1990px;
+    width: 100%;
+  }
+}

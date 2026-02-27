@@ -15,7 +15,7 @@
   transform: translateX(-50%);
   align-items: center;
   z-index: 100;
-  
+
   padding: 16px 16px 0;
 }
 
@@ -132,5 +132,13 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+}
+@include desktop-only {
+  .header-container {
+    padding: 16px 32px 0;
+  }
+  .list-nav-header {
+    gap: 64px;
   }
 }

@@ -86,7 +86,6 @@
     background-size: cover;
     height: 1008px;
   }
-
   .title-hero {
     font-size: 48px;
     width: 468px;
@@ -109,4 +108,22 @@
     right: 32px;
     margin-top: 0;
   }
+}
+@include desktop-only{
+   .hero {
+    position: relative;
+    padding-top: 206px;
+    padding-bottom: 160px;
+    background-image: image-set(
+      url("/image/hero/heroDesktop.jpg") 1x,
+      url("/image/hero/heroDesktop@2x.jpg") 2x
+    );
+    background-size: cover;
+    height: 800px;
+  }
+  .list__icon-social {
+    bottom: 80px;
+    right: 32px;
+  }
+  
 }
