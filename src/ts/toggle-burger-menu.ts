@@ -8,6 +8,7 @@ const iconClose = document.querySelector(
   ".close-burger-menu",
 ) as HTMLElement | null;
 const burgerMenu = document.querySelector(".burger-menu") as HTMLElement | null;
+const listBurgerMenu = document.querySelector(".list-nav-burger-menu");
 const body = document.body;
 
 function toggleBurgerMenu(): void {
@@ -18,6 +19,7 @@ function toggleBurgerMenu(): void {
 }
 
 burgerBtn?.addEventListener("click", toggleBurgerMenu);
+listBurgerMenu?.addEventListener("click", toggleBurgerMenu);
 
 window.addEventListener("resize", () => {
   if (window.innerWidth > 834) {
