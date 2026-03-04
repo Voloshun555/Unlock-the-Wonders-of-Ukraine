@@ -68,7 +68,21 @@
     background-position: center;
     max-width: 834px;
   }
-  .swiper-container-reviews{
+  .swiper-container-reviews {
     margin: 42px 0 95px 0;
+  }
+}
+@include desktop-only {
+  .reviews {
+    max-width: 1440px;
+    background-image: image-set(
+      url("/image/reviews/bgReviewsDesktop.jpg") 1x,
+      url("/image/reviews/bgReviewsDesktop@2x.jpg") 2x
+    );
+    padding: 64px 32px;
+  }
+  
+  .swiper-container-reviews {
+    margin: 64px 0 64px 0;
   }
 }

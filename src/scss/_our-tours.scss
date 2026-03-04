@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
 }
+.our-tours-item{
+display: flex;
+}
 .swiper-container-tours {
   max-width: 375px;
   width: 100%;
@@ -103,3 +106,22 @@
     margin-top: 60px;
   }
 }
+@include desktop-only {
+  .our-tours {
+    width: 1440px;
+  }
+  .swiper-container-tours {
+    max-width: 1440px;
+  }
+  .included-section {
+    margin-left: 0;
+  }
+  .wrapper-list-characteristic-included {
+    flex-direction: column;
+  }
+  .btn-tours-book {
+    margin-bottom: auto;
+  }
+}
+
+

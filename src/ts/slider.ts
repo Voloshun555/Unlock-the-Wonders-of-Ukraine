@@ -14,12 +14,19 @@ function initSliders() {
 
     let slidesCount = 1;
     let slidesOnTablet = 1;
+    let slidesOnDesktop = 1;
+
+    if (ourTours) {
+      slidesOnDesktop = 2;
+    }
 
     if (gallery) {
       slidesOnTablet = 2;
+      slidesOnDesktop = 3.4;
     }
     if (reviews) {
-      slidesOnTablet = 2.4
+      slidesOnTablet = 2.4;
+      slidesOnDesktop = 4;
     }
 
     const nextBtn = container.querySelector(
@@ -35,9 +42,14 @@ function initSliders() {
         direction: "horizontal",
         slidesPerView: slidesCount,
         spaceBetween: 20,
+        setWrapperSize: true,
         breakpoints: {
           835: {
             slidesPerView: slidesOnTablet,
+            spaceBetween: 16,
+          },
+          1440: {
+            slidesPerView: slidesOnDesktop,
             spaceBetween: 16,
           },
         },

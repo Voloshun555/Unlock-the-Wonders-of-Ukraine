@@ -120,3 +120,19 @@ textarea {
     margin: 0;
   }
 }
+@include desktop-only {
+  .start-travel{
+    align-items: flex-end;
+    max-width: 1440px;
+     background-image: image-set(
+      url("/image/start-trevel/bgStartTravelDesktop.jpg") 1x,
+      url("/image/start-trevel/bgStartTravelDesktop@2x.jpg") 2x
+    );
+    padding: 123px 0;
+    background-size: 704px 840px;
+  }
+  .wrapper-start-travel{
+     width: 1032px;
+     padding: 96px 180px;
+  }
+}

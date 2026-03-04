@@ -80,3 +80,9 @@ a {
     margin-top: 40px;
   }
 }
+
+@include desktop-only {
+  .footer {
+    max-width: 1440px;
+  }
+}
