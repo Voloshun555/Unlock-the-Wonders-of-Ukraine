@@ -5,59 +5,78 @@
     <link rel="icon" type="image/svg+xml" href="/Unlock-the-Wonders-of-Ukraine/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>unlock-the-wonders-of-ukraine</title>
-    <script type="module" crossorigin src="/Unlock-the-Wonders-of-Ukraine/assets/index-BXNb0nXH.js"></script>
-    <link rel="stylesheet" crossorigin href="/Unlock-the-Wonders-of-Ukraine/assets/index-C7fRV4-h.css">
+    <script type="module" crossorigin src="/Unlock-the-Wonders-of-Ukraine/assets/index-BkyI9jxE.js"></script>
+    <link rel="stylesheet" crossorigin href="/Unlock-the-Wonders-of-Ukraine/assets/index-Bid5LXL9.css">
   </head>
   <body>
-    <header class="header-container container">
-  <nav>
+    <header class="header-container">
+  <nav class="nav-header">
     <a href="">
       <svg class="logo">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-logo-ua"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-logo-ua"></use>
       </svg>
     </a>
+
+    <ul class="list-nav-header">
+      <li class="item-nav-header"><a href="#about">About us</a></li>
+      <li class="item-nav-header"><a href="#tours">Tours</a></li>
+      <li class="item-nav-header"><a href="#gallery">Gallery</a></li>
+      <li class="item-nav-header"><a href="#contacts">Contacts</a></li>
+    </ul>
   </nav>
 
   <button class="btn__burger-menu">
-    <svg>
-      <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-burger-menu"></use>
+    <svg class="icon-burger-menu open-burger-menu">
+      <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-burger-menu"></use>
+    </svg>
+     <svg class="icon-burger-menu close-burger-menu is-hidden">
+      <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-cross"></use>
     </svg>
   </button>
+
+  <div class="burger-menu">
+    <nav>
+      <ul class="list-nav-burger-menu">
+        <li class="item-nav-burger-menu"><a href="#about">About us</a></li>
+        <li class="item-nav-burger-menu"><a href="#tours">Tours</a></li>
+        <li class="item-nav-burger-menu"><a href="#gallery">Gallery</a></li>
+        <li class="item-nav-burger-menu"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
     <main>
       <section class="hero container">
   <h1 class="title-hero">Unlock the Wonders of</h1>
   <p class="subTitle" data-text="Ukraine">Ukraine</p>
-  <a href="#">
-    <button class="btn-hero">Our tours</button>
-  </a>
+  <a href="#" class="btn-hero"> Our tours </a>
   <ul class="list__icon-social">
     <li class="item__icon-social">
       <a href="">
         <svg class="icon-social">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-instagram"></use>
-      </svg>
+          <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-instagram"></use>
+        </svg>
       </a>
     </li>
     <li class="item__icon-social">
       <a href="">
         <svg class="icon-social">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-facebook"></use>
-      </svg>
+          <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-facebook"></use>
+        </svg>
       </a>
     </li>
     <li class="item__icon-social">
       <a href="">
         <svg class="icon-social">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-telegram"></use>
-      </svg>
+          <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-telegram"></use>
+        </svg>
       </a>
     </li>
   </ul>
 </section>
 
-      <section class="about container">
+      <section class="about container" id="about">
   <div class="about-wrapper">
     <h2 class="title-sections">About us</h2>
     <div class="about__content">
@@ -86,102 +105,181 @@
   </div>
 </section>
 
-      <section class="our-tours container js-slider-container">
+      <section class="our-tours container js-slider-container" id="tours">
   <h2 class="title-sections">Our tours</h2>
-  <div class="swiper swiper-container">
+  <div class="swiper swiper-container-tours">
     <ul class="list-our-tours swiper-wrapper"></ul>
   </div>
   <div class="btn-container">
     <button class="prev-btn swiper-button-prev">
       <svg class="icon-prev">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-prew"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-prew"></use>
       </svg>
     </button>
     <button class="next-btn swiper-button-next">
       <svg class="icon-next">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-next"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-next"></use>
       </svg>
     </button>
   </div>
 </section>
 
-      <section class="gallery container js-slider-container">
+      <section class="gallery container js-slider-container" id="gallery">
   <h2 class="title-sections">Gallery</h2>
-  <div class="swiper container-swiper">
+  <div class="swiper swiper-container-gallery">
     <ul class="swiper-wrapper list-gallery">
     </ul>
   </div>
   <div class="btn-container">
     <button class="prev-btn swiper-button-prev">
       <svg class="icon-prev">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-prew"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-prew"></use>
       </svg>
     </button>
     <button class="next-btn swiper-button-next">
       <svg class="icon-next">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-next"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-next"></use>
       </svg>
     </button>
   </div>
 </section>
 
-      <section class="reviews container">
+      <section class="reviews container js-slider-container">
   <h2 class="title-sections">Reviews</h2>
 
-  <div class="wrapper-reviews">
-    <div class="wrapper-info-person">
-      <img src="/Unlock-the-Wonders-of-Ukraine/image/reviews/Dmitro.png" alt="Dmitro" />
-      <div class="name-person">
-        <h3 class="title-name-person">Dmitro</h3>
-        <ul class="list-icon-stars">
-          <li class="item-icon-star">
-            <svg>
-              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-Star"></use>
-            </svg>
-          </li>
-          <li class="item-icon-star">
-            <svg>
-              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-Star"></use>
-            </svg>
-          </li>
-          <li class="item-icon-star">
-            <svg>
-              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-Star"></use>
-            </svg>
-          </li>
-          <li class="item-icon-star">
-            <svg>
-              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-Star"></use>
-            </svg>
-          </li>
-          <li class="item-icon-star">
-            <svg>
-              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-Star"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
+  <div class="swiper swiper-container-reviews">
+    <div class="swiper-wrapper wrapper-reviews">
     </div>
-    <p class="text-reviews">
-      It was an incredible trip and I am very grateful to the organizers for the
-      opportunity to learn more about our country
-    </p>
   </div>
 
   <div class="btn-container">
-    <button class="prev-btn swiper-button-prev">
+    <button class="prev-btn swiper-button-prev" aria-label="Previous review">
       <svg class="icon-prev">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-prew"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-prew"></use>
       </svg>
     </button>
-    <button class="next-btn swiper-button-next">
+
+    <button class="next-btn swiper-button-next" aria-label="Next review">
       <svg class="icon-next">
-        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-k2cITuvD.svg#icon-next"></use>
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-next"></use>
       </svg>
     </button>
+  </div>
+</section>
+
+      <section class="start-travel container">
+  <div class="wrapper-start-travel">
+    <div class="wripper-info-start-trevel">
+      <h2 class="title-sections title-start-travel">Start travel</h2>
+      <p class="text-start-travel">
+        If you want to get an unforgettable trip, quickly fill out the
+        application and we will contact you during the day
+      </p>
+      <p class="text__start-travel--secondary">
+        We are ready to answer any questions and help choose the best tour
+      </p>
+    </div>
+
+    <form class="forma-start-travel">
+      <div class="wrapper-input">
+        <label for="name">Name</label>
+        <input
+          required
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          class="input-start-travel"
+        />
+      </div>
+
+      <div class="wrapper-input">
+        <label for="phone">Phone</label>
+        <input
+          required
+          type="tel"
+          id="phone"
+          placeholder="+380__-___-__-__"
+          class="input-start-travel"
+          pattern="^\+380\d{2}-\d{3}-\d{2}-\d{2}$"
+        />
+      </div>
+
+      <textarea
+        name="message"
+        placeholder="Your message"
+        aria-label="Your message"
+        class="texteria-start-travel"
+      ></textarea>
+      <button type="submit" class="btn-form-submit">Send</button>
+    </form>
   </div>
 </section>
 
     </main>
+    <footer class="footer container" id="contacts">
+  <div class="wrapper-footer">
+    <a href="#">
+      <svg class="logo-footer">
+        <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-logo-ua"></use>
+      </svg>
+    </a>
+    <nav class="nav-footer">
+      <ul class="list-nav-footer">
+        <li class="item-nav-footer"><a href="#About-us">About us</a></li>
+        <li><a href="#Tours">Tours</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper-contacts-social-footer">
+      <address class="wrapper-list-footer">
+        <ul class="list-contacts-footer">
+          <li class="item-contacts-footer">
+            <a href="tel:+38097-123-11-11" target="_blank">+38097-123-11-11</a>
+          </li>
+          <li class="item-contacts-footer">
+            <a href="mailto:WondersOfUkraine@gmail.com" target="_blank"
+              >WondersOfUkraine@gmail.com</a
+            >
+          </li>
+          <li class="item-contacts-footer">
+            <a
+              href="https://www.google.com/maps?q=Lviv,+Zaporyzhka+198"
+              target="_blank"
+              >Lviv, Zaporyzhka, 198</a
+            >
+          </li>
+        </ul>
+      </address>
+  
+      <ul class="list__icon-social-footer">
+        <li class="item__icon-social-footer">
+          <a href="">
+            <svg class="icon-social-footer">
+              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item__icon-social-footer">
+          <a href="">
+            <svg class="icon-social-footer">
+              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="item__icon-social-footer">
+          <a href="">
+            <svg class="icon-social-footer">
+              <use href="/Unlock-the-Wonders-of-Ukraine/assets/symbol-defs-BhFvXSuh.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="copywriter">© All Rights Reserved</p>
+</footer>
+
   </body>
 </html>
