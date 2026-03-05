@@ -3,7 +3,7 @@ const listReviews = document.querySelector(".wrapper-reviews");
 
 function renderReviews() {
   return dataReviews
-    .map(({ name, text, img, imgX2, star }) => {
+    .map(({ name, text, img, star }) => {
       const starRender = (star: number) => {
         const maxStars = 5;
 
